@@ -4,133 +4,149 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Halaman Artikel</title>
-    <link rel="icon" href="assets/images/img/rifki.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Home</title>
+    <link
+      rel="icon"
+      href="Assets/Images/logo2.png"
+      type="initial-sacale=x-icon"
+    />
+    <link rel="stylesheet" href="Style/Style.css" />
     <script
       src="https://kit.fontawesome.com/81634d0f93.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-
-  <body id="project-detail-body">
+  <body>
     <nav>
       <div id="left-nav">
         <ul>
           <li>
             <a class="nav-option" href="https://dumbways.id/" target="_blank">
-              <img src="assets/images/img/icon.png" alt="DumbWays ID logo" />
+              <img src="Assets/Images/logo2.png" alt="DumbWays ID logo" />
             </a>
           </li>
 
-          <li>
-            <a
-              class="nav-option"
-              href="home-card.html"
-              style="font-weight: normal"
-              >HOME</a
-            >
+          <li class="nav-option-li">
+            <a class="nav-option" href="#">HOME</a>
           </li>
 
-          <li>
-            <a class="nav-option" href="#">MY PROJECT</a>
+          <li class="nav-option-li">
+            <a
+              class="nav-option"
+              href="Personal-Project.html"
+              style="font-weight: normal"
+              >MY PROJECT</a
+            >
           </li>
         </ul>
       </div>
+
       <div id="right-nav">
-        <a href="Contact-form.html">
+        <!-- <i class="fa-solid fa-moon fa-2xl fa-fw" id="theme-switch"></i> -->
+
+        <a href="Contact-Form.html">
           <button type="button">Contact</button>
         </a>
       </div>
+
+      <button id="nav-toggle" onclick="toggleOverlay()">
+        <i class="fa-solid fa-bars-staggered fa-2xl"></i>
+      </button>
     </nav>
 
-    <!-- ------------------------------------------------------------------------------------------------- -->
+    <div id="toggle-overlay">
+      <a href="#" class="nav-option"> HOME </a>
+      <a
+        href="Personal-Project.html"
+        class="nav-option"
+        style="font-weight: normal"
+      >
+        MY PROJECT
+      </a>
+      <a href="Contact-Form.html">
+        <button type="button">Contact</button>
+      </a>
+    </div>
 
-    <h2 class="page-title">My Project</h2>
-
-    <main class="wrap-up-the-pd">
-      <section class="pd-top">
-        <section class="pd-image">
-          <img src="assets/images/img/rifki.jpg" />
-        </section>
-
-        <section class="pd-extra-info">
-          <div class="date-and-duration">
-            <h4>Duration</h4>
-
-            <div>
-              <i class="fa-solid fa-calendar-days fa-2xl fa-fw"></i>
-              <span>12 Desember 2001</span>
-            </div>
-
-            <div>
-              <i class="fa-solid fa-clock-rotate-left fa-2xl fa-fw"></i>
-              <span>5 month</span>
-            </div>
+    <div id="parent-card-container">
+      <div id="left-hand">
+        <div id="first-section">
+          <div>
+            <h2>Mari Berteman</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nihil
+              voluptas placeat voluptates, vitae recusandae voluptatum id dolor.
+              Optio minus repudiandae rem ad, odit illo velit harum dicta
+              aliquam, eum eius labore alias animi magnam voluptatibus, magni
+              eveniet neque consequatur! Eveniet alias, dolore quisquam
+              molestias omnis corrupti id eos saepe!
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nihil
+              voluptas placeat voluptates, vitae recusandae voluptatum id dolor.
+              Optio minus repudiandae rem ad, odit illo velit harum dicta
+              aliquam, eum eius labore alias animi magnam voluptatibus, magni
+              eveniet neque consequatur! Eveniet alias, dolore quisquam
+              molestias omnis corrupti id eos saepe!
+            </p>
           </div>
 
-          <div class="wrap-up-the-tech">
-            <h4>Technologies Used</h4>
-
-            <div class="tech-grid">
-              <div>
-                <i class="fa-brands fa-square-js fa-2xl fa-fw"></i>
-                <span>Javascript</span>
-              </div>
-
-              <div>
-                <i class="fa-brands fa-bootstrap fa-2xl fa-fw"></i>
-                <span>Bootstrap</span>
-              </div>
-
-              <div>
-                <i class="fa-brands fa-golang fa-2xl fa-fw"></i>
-                <span>Go</span>
-              </div>
-
-              <div>
-                <i class="fa-brands fa-react fa-2xl fa-fw"></i>
-                <span>React</span>
-              </div>
-            </div>
+          <div id="CTAs">
+            <a href="https://wa.me/6282124548492">
+              <button class="button-whatsaap" type="button">Whatsaap</button>
+            </a>
+            <a
+              href="Assets/Images/Rifki M Ramdan CV.jpg"
+              target="_blank"
+              id="not-button"
+            >
+              <p>Download CV</p>
+              <i class="fa-solid fa-folder-arrow-down"></i>
+            </a>
           </div>
-        </section>
-      </section>
-
-      <section class="pd-paragraph">
-        <div>
-          <h3>Judul Artikel</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, magni
-            earum! Adipisci unde quam soluta ratione, ex laboriosam, mollitia
-            voluptatum non voluptas ullam, culpa alias? Sunt nulla dicta commodi
-            vitae assumenda quas tempore beatae eligendi. Aliquam molestiae,
-            praesentium, voluptatibus ab at, magnam dolor architecto dicta ex
-            minima voluptatum!
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium labore suscipit nulla nobis, animi eaque veritatis
-            inventore ullam, quas consequuntur aut distinctio ipsum quae eius et
-            earum, quo reprehenderit vero? Incidunt sequi velit eaque minus
-            nesciunt eum quis iure accusantium, molestiae, corrupti magni
-            cupiditate explicabo cumque distinctio illo, officiis facere est ut.
-            Blanditiis illo at id laborum deserunt excepturi nihil quam deleniti
-            eius, ab iste dolore nostrum corporis odit. Iure, suscipit non!
-          </p>
-
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis,
-            laborum ipsa. Beatae cupiditate odit repudiandae iste commodi,
-            corrupti hic nihil, nisi veritatis nemo alias cumque laborum optio,
-            ea corporis magni. Similique minus ut id blanditiis ex consectetur
-            veniam deleniti dolorem soluta. Expedita in doloribus aspernatur,
-            voluptas corporis, dolores recusandae distinctio sunt a, cumque
-            veritatis aperiam exercitationem ipsum placeat rem vel?
-          </p>
         </div>
-      </section>
-    </main>
+
+        <div id="second-section">
+          <a
+            href="https://www.linkedin.com/in/rifki-mr-38875218b/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in fa-2xl fa-fw"></i>
+          </a>
+          <a href="https://www.instagram.com/Rifkimr12/" target="_blank">
+            <i class="fa-brands fa-instagram fa-2xl fa-fw" id="instagram"></i>
+          </a>
+          <a
+            href="https://web.facebook.com/rifki.muhamadramdan/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook-f fa-2xl fa-fw"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="fa-brands fa-twitter fa-2xl fa-fw"></i>
+          </a>
+        </div>
+      </div>
+
+      <div id="right-hand">
+        <div id="inner-card">
+          <img
+            src="Assets/Images/image-3.jpg"
+            alt="Black hoodie with green background"
+          />
+          <h3>Rifki Muhamad Ramdan</h3>
+          <p>Full stackdeveloper.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/Js/Mobile-Nav-Tonggle.js"></script>
   </body>
 </html>
